@@ -4,7 +4,8 @@ body{
     justify-content: center;
     align-items: center;
     margin:0;
-    padding:0
+    padding:0;
+    background-image:url('imgBackground.png');
 }
 
 #container{
@@ -19,13 +20,22 @@ body{
 
 .square{
 
-    background-color: blue;
+    background-color: rgba(130,106,217,255);
     border:0px solid pink;
 }
 
 .buton{
     margin-top:30px;
+    color:rgba(252,248,219,255);
+    background-color:rgba(67,142,233,255) ;
+    font-family: "Times New Roman", Times, serif;
+    font-weight: 700;
+    font-size:16px;
+    border-radius: 8px;
+    width:120px;
+    height:30px;
 }
+
 
 /* .square:hover{
     background-color: black;

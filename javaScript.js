@@ -1,5 +1,5 @@
 const container=document.querySelector("#container")
-let divs
+let divs,r,b,g,o=1;
 
 function createDivs(pixel){
  let containerWidth=960
@@ -11,6 +11,7 @@ function createDivs(pixel){
     div.classList.add("square")
     div.style.width=`${boxWidth}px`
     div.style.height=`${boxWidth}px`
+    div.style.opacity = 1;
     container.appendChild(div)
     console.log(`Created div: ${i}.${j}`)
         }
@@ -18,10 +19,19 @@ function createDivs(pixel){
     divs = document.querySelectorAll(".square");
 }
 
+function randomColor(){
+     r=Math.floor(Math.random()*255);
+     b=Math.floor(Math.random()*255);
+     g=Math.floor(Math.random()*255);
+}
+
+
 function hoverEffect() {
     divs.forEach(div => {
         div.addEventListener("mouseenter", function() {
-            div.style.backgroundColor = "black";
+            randomColor();
+            div.style.opacity-=0.1;
+            div.style.backgroundColor = `rgb(${r},${g},${b})`;
         });
     });
 }
