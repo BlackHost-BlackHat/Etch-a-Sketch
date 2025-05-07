@@ -1,0 +1,32 @@
+body{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin:0;
+    padding:0
+}
+
+#container{
+ display: flex;
+ width: 960px;
+ /* gap:20px; */
+ flex-wrap:wrap;
+ justify-content: center;
+ align-items: center;
+ padding-top:20px;
+}
+
+.square{
+
+    background-color: blue;
+    border:0px solid pink;
+}
+
+.buton{
+    margin-top:30px;
+}
+
+/* .square:hover{
+    background-color: black;
+} */
